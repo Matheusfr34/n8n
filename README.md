@@ -31,17 +31,11 @@ Antes de rodar o projeto, instale:
 
    Verifique a instalação:  
    ```bash
-   node -v
-   npm -v
+   node --version
+   npm --version
    ```
 
-2. **TypeScript (globalmente):**
-   ```bash
-   npm install -g typescript
-   tsc -v
-   ```
-
-3. **Docker:**  
+2. **Docker:**  
    [Instalar Docker](https://docs.docker.com/get-docker/)
 
    Verifique se está funcionando:
@@ -57,20 +51,40 @@ Antes de rodar o projeto, instale:
 
 ---
 
-## Subindo a infra com Docker
-
+## Desenvolvendo o Custom Node
 1. Clone este repositório e entre na pasta do projeto:
    ```bash
    git clone <seu-repo>
    cd n8n
    ```
 
-2. Suba os containers do n8n + Postgres:
+2. Entre na pasta do custom node:
+   ```bash
+   cd n8n/custom/nodes/Random
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Compile o código TypeScript:
+   ```bash
+   npm run build
+   ```
+
+5. O conector será disponibilizado no n8n, em **Nodes → Random**.
+
+---
+
+## Subindo a infra com Docker
+
+1. Suba os containers do n8n + Postgres:
    ```bash
    docker compose up -d
    ```
 
-3. Verifique se estão rodando:
+2. Verifique se estão rodando:
    ```bash
    docker ps
    ```
@@ -82,29 +96,8 @@ Antes de rodar o projeto, instale:
    def456...      postgres:15   "docker-entrypoint.s…"   5432/tcp                 n8n-postgres
    ```
 
-4. Acesse o n8n no navegador:  
+3. Acesse o n8n no navegador:  
    **Link:** [http://localhost:5678](http://localhost:5678)
-
----
-
-## Desenvolvendo o Custom Node
-
-1. Entre na pasta do custom node:
-   ```bash
-   cd n8n/custom/nodes/Random
-   ```
-
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-
-3. Compile o código TypeScript:
-   ```bash
-   npm run build
-   ```
-
-4. O conector será disponibilizado no n8n, em **Nodes → Random**.
 
 ---
 
