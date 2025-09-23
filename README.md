@@ -63,6 +63,26 @@ Antes de rodar o projeto, instale:
    cd n8n
    ```
 
+   > **Opcional:** Abrir o projeto no VS Code, caso já esteja na pasta n8n no terminal 
+   > 
+   > Se você usa o VS Code, pode abrir a pasta do projeto direto no editor com:
+   > 
+   > ```bash
+   > code .
+   > ```
+   > 
+   > ### Habilitando o comando `code` no terminal
+   > - **macOS / Linux**:  
+   >   1. Abra o VS Code.  
+   >   2. Pressione `⌘ + Shift + P` (macOS) ou `Ctrl + Shift + P` (Linux).  
+   >   3. Digite e selecione: **"Shell Command: Install 'code' command in PATH"**.  
+   >   4. Feche e reabra o terminal.  
+   > 
+   > - **Windows**:  
+   >   O comando `code` já costuma estar disponível após instalar o VS Code.  
+   >   Caso não funcione, verifique se a opção **"Adicionar ao PATH"** foi marcada durante a instalação, ou reinstale habilitando essa opção.  
+
+
 2. Entre na pasta do custom node:
    ```bash
    cd custom/nodes
