@@ -55,6 +55,7 @@ Antes de rodar o projeto, instale:
 1. Clone este repositório e entre na pasta do projeto:
    ```bash
    git clone https://github.com/Matheusfr34/n8n.git
+   cd n8n
    ```
 
 2. Entre na pasta do custom node:
