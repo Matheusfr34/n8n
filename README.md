@@ -31,8 +31,8 @@ Antes de rodar o projeto, instale:
 
    Verifique a instalação:  
    ```bash
-   node -v
-   npm -v
+   node --version
+   npm --version
    ```
 
 2. **TypeScript (globalmente):**
