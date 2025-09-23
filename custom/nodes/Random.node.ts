@@ -18,8 +18,8 @@ export class Random implements INodeType {
 			name: 'Random',
 			color: '#772244',
 		},
-		inputs: ['main' as NodeConnectionType],
-		outputs: ['main' as NodeConnectionType],
+		inputs: ['main' as NodeConnectionType], //Não funcionou com [NodeConnectionType.Main]
+		outputs: ['main' as NodeConnectionType], 
 		properties: [
 			{
 				displayName: 'Operation',
