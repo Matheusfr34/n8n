@@ -32,6 +32,8 @@ Antes de rodar o projeto, instale:
    Verifique a instalação:  
    ```bash
    node --version
+   ```
+   ```bash
    npm --version
    ```
 
@@ -40,7 +42,7 @@ Antes de rodar o projeto, instale:
 
    Verifique se está funcionando:
    ```bash
-   docker -v
+   docker --version
    ```
 
 4. **Docker Compose:**  
@@ -55,6 +57,9 @@ Antes de rodar o projeto, instale:
 1. Clone este repositório e entre na pasta do projeto:
    ```bash
    git clone https://github.com/Matheusfr34/n8n.git
+   ```
+   
+   ```bash
    cd n8n
    ```
 
