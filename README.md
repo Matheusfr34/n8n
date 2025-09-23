@@ -9,7 +9,7 @@ Ele contém um **conector personalizado** para o [n8n](https://n8n.io), chamado 
 O conector **Random** possui uma única operação:
 
 - **True Random Number Generator**  
-  Gera um número inteiro aleatório entre um **mínimo (Min)** e um **máximo (Max)**, ambos inclusivos.
+  Gera um número inteiro aleatório entre um **mínimo (Min)** e um **máximo (Max)**.
 
 ---
 
@@ -60,7 +60,7 @@ Antes de rodar o projeto, instale:
 
 2. Entre na pasta do custom node:
    ```bash
-   cd n8n/custom/nodes/Random
+   cd custom/nodes
    ```
 
 3. Instale as dependências:
@@ -72,8 +72,6 @@ Antes de rodar o projeto, instale:
    ```bash
    npm run build
    ```
-
-5. O conector será disponibilizado no n8n, em **Nodes → Random**.
 
 ---
 
@@ -99,13 +97,14 @@ Antes de rodar o projeto, instale:
 3. Acesse o n8n no navegador:  
    **Link:** [http://localhost:5678](http://localhost:5678)
 
+5. Pronto! O conector será disponibilizado no n8n, em **Nodes → Random**.
+
 ---
 
 ## Estrutura do projeto
 
 ```
 n8n/
-├── compose.yaml              # Configuração Docker Compose
 ├── custom/
 │   └── nodes/
 │       └── Random/
@@ -113,6 +112,11 @@ n8n/
 │           ├── Random.node.json
 │           ├── random.svg
 │           └── package.json
+├── compose.yaml           # Configuração Docker Compose
+├── .gitignore
+├── tsconfig.json
+├── README.md  
+
 ```
 
 ---
